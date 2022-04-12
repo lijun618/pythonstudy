@@ -1,4 +1,4 @@
-# 当月奖金bonus根据当月利润profit按比例发放。输入利润I计算应发奖金金额并输出。
+# 当月奖金bonus根据当月利润profit按比例发放。输入利润profit计算应发奖金金额并输出。
 profit=float(input("请输入本月利润(万元):"))
 print("当月利润额为",profit,"万元")
 if 0<profit<=10:
