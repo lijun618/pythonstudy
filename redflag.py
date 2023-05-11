@@ -5,6 +5,7 @@ import turtle as t
 # 长方形旗面
 t.speed(10)
 t.setup(800, 700, 0,0)
+'''
 t.fillcolor("red")
 t.begin_fill()
 t.up()
@@ -20,13 +21,28 @@ t.left(90)
 t.fd(400)
 t.ht()
 t.end_fill()
-
+'''
+def draw_rectangle(x, y, width, height):
+    """绘制矩形"""
+    t.up()
+    t.goto(x, y)
+    t.pencolor('white')
+    t.fillcolor('red')
+    t.begin_fill()
+    for i in range(2):
+        t.down()
+        t.forward(width)
+        t.left(90)
+        t.forward(height)
+        t.left(90)
+    t.end_fill()
+draw_rectangle(-400, -200, 800,600)
 # 第一个大五角星
 t.fillcolor('yellow')
 t.begin_fill()
 t.up()
-t.goto(-250, 110)
-t.left(90)
+t.goto(-350, 230)
+# t.left(90)
 t.down()
 for i in range(5):
     t.pencolor("yellow")
@@ -39,7 +55,7 @@ t.end_fill()
 t.up()
 t.fillcolor("yellow")
 t.begin_fill()
-t.goto(-150, 160)
+t.goto(-200, 280)
 t.down()
 for i in range(5):
     t.pencolor("yellow")
@@ -51,7 +67,7 @@ t.end_fill()
 t.up()
 t.fillcolor("yellow")
 t.begin_fill()
-t.goto(-110,110)
+t.goto(-160,230)
 t.down()
 for i in range(5):
     t.pencolor("yellow")
@@ -65,7 +81,7 @@ t.end_fill()
 t.up()
 t.fillcolor()
 t.begin_fill()
-t.goto(-110, 55)
+t.goto(-160, 180)
 t.down()
 for i in range(5):
     t.pencolor("yellow")
@@ -78,7 +94,7 @@ t.end_fill()
 t.up()
 t.fillcolor('yellow')
 t.begin_fill()
-t.goto(-150, 10)
+t.goto(-200, 130)
 t.down()
 for i in range(5):
     t.pencolor("yellow")
@@ -87,12 +103,7 @@ for i in range(5):
 
 
 
-
+t.ht()
 t.end_fill()
 t.done()
 
-
-
-
-
-# "垃圾代码。。。。。。"
